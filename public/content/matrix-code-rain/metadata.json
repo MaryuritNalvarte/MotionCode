@@ -1,0 +1,35 @@
+{
+  "id": "5",
+  "slug": "matrix-code-rain",
+  "title": "Matrix Code Rain",
+  "category": "Particle Systems",
+  "categorySlug": "particles",
+  "categoryIcon": "🌌",
+  "difficulty": "Intermediate",
+  "views": 77400,
+  "stars": 589,
+  "likes": 1876,
+  "creator": "stardustfx",
+  "creatorAvatar": "S",
+  "creatorColor": "#ec4899",
+  "gradientFrom": "#10b981",
+  "gradientTo": "#06b6d4",
+  "animationType": "matrix",
+  "tags": [
+    "canvas",
+    "matrix",
+    "rain",
+    "code"
+  ],
+  "description": "The iconic Matrix digital rain effect with canvas. Customizable character sets, speed and color themes.",
+  "isNew": false,
+  "isTrending": true,
+  "isFeatured": false,
+  "rows": [
+    "trending",
+    "canvas"
+  ],
+  "htmlPath": "/content/matrix-code-rain/html.txt",
+  "cssPath": "/content/matrix-code-rain/css.txt",
+  "jsPath": "/content/matrix-code-rain/js.txt"
+}

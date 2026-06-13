@@ -1,0 +1,117 @@
+{
+  "navbar": {
+    "explore": "Explorar",
+    "trending": "Tendencias",
+    "categories": "Categorías",
+    "creators": "Creadores",
+    "signIn": "Iniciar Sesión",
+    "getStarted": "Empezar Gratis"
+  },
+  "search": {
+    "placeholder": "Buscar animaciones...",
+    "label": "Buscar animaciones",
+    "hint": "Prueba: cursor, corazón, partículas, loading, botón, tarjeta",
+    "examples": ["cursor", "corazón", "partículas", "loading", "botón", "tarjeta", "glitch", "neón"],
+    "noResults": "No se encontraron animaciones",
+    "recentSearches": "Búsquedas recientes",
+    "trending": "Tendencias",
+    "new": "Nuevas"
+  },
+  "hero": {
+    "line1": "Código",
+    "words": ["Animaciones", "Interacciones", "Experiencias", "Efectos", "Magia"],
+    "subtitle": "Descubre cientos de",
+    "subtitleEnd": "animaciones virales con vistas previas en vivo y código fuente listo para copiar y pegar.",
+    "exploreAnimations": "Explorar Animaciones",
+    "viewTrending": "Ver Tendencias",
+    "updatedWeekly": "500+ animaciones · Actualizado semanalmente"
+  },
+  "netflix": {
+    "rowTrending": "🔥 Tendencias",
+    "rowNew": "✨ Nuevas Animaciones",
+    "rowCSS": "⚡ CSS",
+    "rowJS": "🚀 JavaScript",
+    "rowParticles": "🌌 Partículas",
+    "rowCanvas": "🎨 Canvas",
+    "rowThreeJS": "🧊 Three.js",
+    "rowCursors": "🖱 Cursores",
+    "rowLoading": "⏳ Loading",
+    "rowHearts": "❤️ Corazones",
+    "seeAll": "Ver todo"
+  },
+  "cards": {
+    "preview": "Vista Previa",
+    "code": "Código"
+  },
+  "project": {
+    "livePreview": "VISTA EN VIVO",
+    "liveDemo": "Ver Demo",
+    "copyCode": "Copiar Código",
+    "copied": "¡Copiado!",
+    "downloadZip": "Descargar ZIP",
+    "aboutAnimation": "Sobre esta Animación",
+    "howItWorks": "Cómo funciona",
+    "relatedAnimations": "Animaciones Relacionadas",
+    "difficulty": "Dificultad",
+    "category": "Categoría",
+    "backToExplore": "Explorar",
+    "watchVideo": "Ver en",
+    "embedVideo": "Video Tutorial",
+    "views": "Vistas",
+    "stars": "Estrellas",
+    "likes": "Me gusta",
+    "creator": "Creador"
+  },
+  "category": {
+    "allAnimations": "Todas las Animaciones",
+    "filterBy": "Filtrar por",
+    "sortBy": "Ordenar por",
+    "sortPopular": "Más Popular",
+    "sortNew": "Más Nuevas",
+    "sortStars": "Más Estrellas",
+    "sortAZ": "A → Z"
+  },
+  "trending": {
+    "title": "Animaciones en Tendencia",
+    "subtitle": "Las animaciones más populares de esta semana"
+  },
+  "stats": {
+    "totalAnimations": "Animaciones Totales",
+    "developers": "Desarrolladores",
+    "monthlyViews": "Vistas Mensuales",
+    "countries": "Países",
+    "satisfaction": "Satisfacción",
+    "freeForever": "Gratis Siempre",
+    "copyPasteReady": "Listas para copiar y pegar",
+    "usingCodeDaily": "Usan nuestro código a diario",
+    "acrossProjects": "En todos los proyectos",
+    "worldwideReach": "Alcance mundial",
+    "fiveStarRated": "Proyectos con 5 estrellas",
+    "noPaywalls": "Sin muros de pago, nunca"
+  },
+  "newsletter": {
+    "title": "Recibe las mejores animaciones",
+    "title2": "cada semana",
+    "subtitle": "Packs exclusivos, tutoriales y acceso anticipado — directo a tu bandeja, cada jueves.",
+    "subscribe": "Suscribirse Gratis",
+    "noSpam": "Sin spam · Cancela cuando quieras · Siempre gratis",
+    "success": "¡Ya estás dentro! Revisa tu correo 🎉",
+    "benefits1": "Animaciones semanales",
+    "benefits2": "Packs de código exclusivos",
+    "benefits3": "Acceso anticipado a novedades"
+  },
+  "footer": {
+    "tagline": "La librería de animaciones copy-paste definitiva para desarrolladores frontend modernos. Gratis siempre.",
+    "systemStatus": "Todos los sistemas operativos",
+    "madeWith": "Hecho con",
+    "forDevs": "para la comunidad de desarrolladores"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "back": "Atrás",
+    "home": "Inicio",
+    "notFound": "Página no encontrada",
+    "language": "Idioma"
+  }
+}

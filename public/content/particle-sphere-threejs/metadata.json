@@ -1,0 +1,36 @@
+{
+  "id": "22",
+  "slug": "particle-sphere-threejs",
+  "title": "Particle Sphere",
+  "category": "Three.js",
+  "categorySlug": "threejs",
+  "categoryIcon": "🧊",
+  "difficulty": "Advanced",
+  "views": 88200,
+  "stars": 641,
+  "likes": 1987,
+  "creator": "stardustfx",
+  "creatorAvatar": "S",
+  "creatorColor": "#ec4899",
+  "gradientFrom": "#8b5cf6",
+  "gradientTo": "#06b6d4",
+  "animationType": "orbit",
+  "tags": [
+    "threejs",
+    "sphere",
+    "3d",
+    "particles"
+  ],
+  "description": "Thousands of particles arranged in a rotating 3D sphere with wave distortion.",
+  "isNew": false,
+  "isTrending": true,
+  "isFeatured": true,
+  "rows": [
+    "trending",
+    "threejs",
+    "particles"
+  ],
+  "htmlPath": "/content/particle-sphere-threejs/html.txt",
+  "cssPath": "/content/particle-sphere-threejs/css.txt",
+  "jsPath": "/content/particle-sphere-threejs/js.txt"
+}

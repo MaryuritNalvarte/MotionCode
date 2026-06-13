@@ -1,0 +1,36 @@
+{
+  "id": "19",
+  "slug": "neon-heart-pulse",
+  "title": "Neon Heart Pulse",
+  "category": "CSS",
+  "categorySlug": "css",
+  "categoryIcon": "✨",
+  "difficulty": "Beginner",
+  "views": 73400,
+  "stars": 521,
+  "likes": 1893,
+  "creator": "motioncraft",
+  "creatorAvatar": "M",
+  "creatorColor": "#06b6d4",
+  "gradientFrom": "#ec4899",
+  "gradientTo": "#f43f5e",
+  "animationType": "ripple",
+  "tags": [
+    "heart",
+    "pulse",
+    "neon",
+    "love"
+  ],
+  "description": "Glowing neon heart that pulses and radiates rings. A viral Valentine's Day animation.",
+  "isNew": false,
+  "isTrending": true,
+  "isFeatured": false,
+  "rows": [
+    "trending",
+    "hearts",
+    "css"
+  ],
+  "htmlPath": "/content/neon-heart-pulse/html.txt",
+  "cssPath": "/content/neon-heart-pulse/css.txt",
+  "jsPath": "/content/neon-heart-pulse/js.txt"
+}

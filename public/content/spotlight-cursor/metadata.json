@@ -1,0 +1,34 @@
+{
+  "id": "15",
+  "slug": "spotlight-cursor",
+  "title": "Spotlight Cursor",
+  "category": "Cursors",
+  "categorySlug": "cursors",
+  "categoryIcon": "🖱",
+  "difficulty": "Beginner",
+  "views": 27800,
+  "stars": 198,
+  "likes": 543,
+  "creator": "chromawave",
+  "creatorAvatar": "C",
+  "creatorColor": "#10b981",
+  "gradientFrom": "#f59e0b",
+  "gradientTo": "#ec4899",
+  "animationType": "aurora",
+  "tags": [
+    "cursor",
+    "spotlight",
+    "dark",
+    "light"
+  ],
+  "description": "A spotlight that follows the cursor revealing content in a dark canvas.",
+  "isNew": false,
+  "isTrending": false,
+  "isFeatured": false,
+  "rows": [
+    "cursors"
+  ],
+  "htmlPath": "/content/spotlight-cursor/html.txt",
+  "cssPath": "/content/spotlight-cursor/css.txt",
+  "jsPath": "/content/spotlight-cursor/js.txt"
+}

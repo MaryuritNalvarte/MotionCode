@@ -1,0 +1,35 @@
+{
+  "id": "13",
+  "slug": "ghost-cursor",
+  "title": "Ghost Cursor Trail",
+  "category": "Cursors",
+  "categorySlug": "cursors",
+  "categoryIcon": "🖱",
+  "difficulty": "Beginner",
+  "views": 44300,
+  "stars": 312,
+  "likes": 920,
+  "creator": "axeldev",
+  "creatorAvatar": "A",
+  "creatorColor": "#8b5cf6",
+  "gradientFrom": "#8b5cf6",
+  "gradientTo": "#3b82f6",
+  "animationType": "loader",
+  "tags": [
+    "cursor",
+    "trail",
+    "ghost",
+    "mouse"
+  ],
+  "description": "Glowing ghost dots that follow the cursor with a smooth trailing effect.",
+  "isNew": false,
+  "isTrending": true,
+  "isFeatured": false,
+  "rows": [
+    "trending",
+    "cursors"
+  ],
+  "htmlPath": "/content/ghost-cursor/html.txt",
+  "cssPath": "/content/ghost-cursor/css.txt",
+  "jsPath": "/content/ghost-cursor/js.txt"
+}

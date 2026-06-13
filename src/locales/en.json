@@ -1,0 +1,117 @@
+{
+  "navbar": {
+    "explore": "Explore",
+    "trending": "Trending",
+    "categories": "Categories",
+    "creators": "Creators",
+    "signIn": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "search": {
+    "placeholder": "Search animations...",
+    "label": "Search animations",
+    "hint": "Try: cursor, heart, particles, loading, button, card",
+    "examples": ["cursor", "heart", "particles", "loading", "button", "card", "glitch", "neon"],
+    "noResults": "No animations found",
+    "recentSearches": "Recent searches",
+    "trending": "Trending",
+    "new": "New"
+  },
+  "hero": {
+    "line1": "Beautiful Code",
+    "words": ["Animations", "Interactions", "Experiences", "Effects", "Magic"],
+    "subtitle": "Discover hundreds of viral",
+    "subtitleEnd": "animations with live previews and instant copy-paste source code.",
+    "exploreAnimations": "Explore Animations",
+    "viewTrending": "View Trending",
+    "updatedWeekly": "500+ animations · Updated weekly"
+  },
+  "netflix": {
+    "rowTrending": "🔥 Trending",
+    "rowNew": "✨ New Animations",
+    "rowCSS": "⚡ CSS",
+    "rowJS": "🚀 JavaScript",
+    "rowParticles": "🌌 Particles",
+    "rowCanvas": "🎨 Canvas",
+    "rowThreeJS": "🧊 Three.js",
+    "rowCursors": "🖱 Cursors",
+    "rowLoading": "⏳ Loading",
+    "rowHearts": "❤️ Hearts",
+    "seeAll": "See all"
+  },
+  "cards": {
+    "preview": "Preview",
+    "code": "Code"
+  },
+  "project": {
+    "livePreview": "LIVE PREVIEW",
+    "liveDemo": "Live Demo",
+    "copyCode": "Copy Code",
+    "copied": "Copied!",
+    "downloadZip": "Download ZIP",
+    "aboutAnimation": "About this Animation",
+    "howItWorks": "How it works",
+    "relatedAnimations": "Related Animations",
+    "difficulty": "Difficulty",
+    "category": "Category",
+    "backToExplore": "Explore",
+    "watchVideo": "Watch on",
+    "embedVideo": "Video Walkthrough",
+    "views": "Views",
+    "stars": "Stars",
+    "likes": "Likes",
+    "creator": "Creator"
+  },
+  "category": {
+    "allAnimations": "All Animations",
+    "filterBy": "Filter by",
+    "sortBy": "Sort by",
+    "sortPopular": "Most Popular",
+    "sortNew": "Newest",
+    "sortStars": "Most Starred",
+    "sortAZ": "A → Z"
+  },
+  "trending": {
+    "title": "Trending Animations",
+    "subtitle": "The most popular animations this week"
+  },
+  "stats": {
+    "totalAnimations": "Total Animations",
+    "developers": "Developers",
+    "monthlyViews": "Monthly Views",
+    "countries": "Countries",
+    "satisfaction": "Satisfaction",
+    "freeForever": "Free Forever",
+    "copyPasteReady": "Pure copy-paste ready",
+    "usingCodeDaily": "Using our code daily",
+    "acrossProjects": "Across all projects",
+    "worldwideReach": "Worldwide reach",
+    "fiveStarRated": "5-star rated projects",
+    "noPaywalls": "No paywalls, ever"
+  },
+  "newsletter": {
+    "title": "Get the hottest animations",
+    "title2": "delivered weekly",
+    "subtitle": "Exclusive animation packs, tutorials and early access — straight to your inbox, every Thursday.",
+    "subscribe": "Subscribe Free",
+    "noSpam": "No spam · Unsubscribe anytime · Free forever",
+    "success": "You're in! Check your inbox 🎉",
+    "benefits1": "Weekly animation drops",
+    "benefits2": "Exclusive code packs",
+    "benefits3": "Early access to new features"
+  },
+  "footer": {
+    "tagline": "The premier copy-paste animation library for modern frontend developers. Free forever.",
+    "systemStatus": "All systems operational",
+    "madeWith": "Made with",
+    "forDevs": "for the developer community"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "back": "Back",
+    "home": "Home",
+    "notFound": "Page not found",
+    "language": "Language"
+  }
+}

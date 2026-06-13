@@ -1,0 +1,35 @@
+{
+  "id": "14",
+  "slug": "magnetic-cursor",
+  "title": "Magnetic Cursor",
+  "category": "Cursors",
+  "categorySlug": "cursors",
+  "categoryIcon": "🖱",
+  "difficulty": "Intermediate",
+  "views": 31200,
+  "stars": 224,
+  "likes": 673,
+  "creator": "motioncraft",
+  "creatorAvatar": "M",
+  "creatorColor": "#06b6d4",
+  "gradientFrom": "#06b6d4",
+  "gradientTo": "#8b5cf6",
+  "animationType": "particles",
+  "tags": [
+    "cursor",
+    "magnetic",
+    "button",
+    "interaction"
+  ],
+  "description": "Buttons that magnetically attract the cursor on hover. Premium interaction feel.",
+  "isNew": true,
+  "isTrending": false,
+  "isFeatured": false,
+  "rows": [
+    "new",
+    "cursors"
+  ],
+  "htmlPath": "/content/magnetic-cursor/html.txt",
+  "cssPath": "/content/magnetic-cursor/css.txt",
+  "jsPath": "/content/magnetic-cursor/js.txt"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "25",
+  "slug": "fireflies",
+  "title": "Firefly Forest",
+  "category": "Particle Systems",
+  "categorySlug": "particles",
+  "categoryIcon": "🌌",
+  "difficulty": "Beginner",
+  "views": 56300,
+  "stars": 412,
+  "likes": 1234,
+  "creator": "codepoet",
+  "creatorAvatar": "P",
+  "creatorColor": "#34d399",
+  "gradientFrom": "#10b981",
+  "gradientTo": "#f59e0b",
+  "animationType": "particles",
+  "tags": [
+    "firefly",
+    "particles",
+    "canvas",
+    "ambient"
+  ],
+  "description": "Glowing fireflies drifting with randomized paths and organic motion.",
+  "isNew": false,
+  "isTrending": false,
+  "isFeatured": false,
+  "rows": [
+    "particles",
+    "canvas"
+  ],
+  "htmlPath": "/content/fireflies/html.txt",
+  "cssPath": "/content/fireflies/css.txt",
+  "jsPath": "/content/fireflies/js.txt"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "1",
+  "slug": "neon-orbit-system",
+  "title": "Neon Orbit System",
+  "category": "CSS",
+  "categorySlug": "css",
+  "categoryIcon": "✨",
+  "difficulty": "Intermediate",
+  "views": 48200,
+  "stars": 312,
+  "likes": 891,
+  "creator": "axeldev",
+  "creatorAvatar": "A",
+  "creatorColor": "#8b5cf6",
+  "gradientFrom": "#8b5cf6",
+  "gradientTo": "#ec4899",
+  "animationType": "orbit",
+  "tags": [
+    "css",
+    "neon",
+    "orbit",
+    "glow"
+  ],
+  "description": "A mesmerizing multi-ring orbital system built with pure CSS. Each ring rotates at a different speed creating a hypnotic planetary motion effect.",
+  "isNew": false,
+  "isTrending": true,
+  "isFeatured": true,
+  "rows": [
+    "trending",
+    "css"
+  ],
+  "htmlPath": "/content/neon-orbit-system/html.txt",
+  "cssPath": "/content/neon-orbit-system/css.txt",
+  "jsPath": "/content/neon-orbit-system/js.txt"
+}

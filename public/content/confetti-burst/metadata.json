@@ -1,0 +1,35 @@
+{
+  "id": "27",
+  "slug": "confetti-burst",
+  "title": "Confetti Burst",
+  "category": "Particle Systems",
+  "categorySlug": "particles",
+  "categoryIcon": "🌌",
+  "difficulty": "Intermediate",
+  "views": 37600,
+  "stars": 278,
+  "likes": 834,
+  "creator": "uicraft",
+  "creatorAvatar": "U",
+  "creatorColor": "#f59e0b",
+  "gradientFrom": "#f59e0b",
+  "gradientTo": "#ec4899",
+  "animationType": "particles",
+  "tags": [
+    "confetti",
+    "celebration",
+    "canvas",
+    "click"
+  ],
+  "description": "Physics-based confetti explosion triggered on click. Gravity, rotation and color variety.",
+  "isNew": true,
+  "isTrending": false,
+  "isFeatured": false,
+  "rows": [
+    "new",
+    "particles"
+  ],
+  "htmlPath": "/content/confetti-burst/html.txt",
+  "cssPath": "/content/confetti-burst/css.txt",
+  "jsPath": "/content/confetti-burst/js.txt"
+}

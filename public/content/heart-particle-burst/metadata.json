@@ -1,0 +1,37 @@
+{
+  "id": "20",
+  "slug": "heart-particle-burst",
+  "title": "Heart Particle Burst",
+  "category": "Particle Systems",
+  "categorySlug": "particles",
+  "categoryIcon": "🌌",
+  "difficulty": "Advanced",
+  "views": 68900,
+  "stars": 492,
+  "likes": 1674,
+  "creator": "stardustfx",
+  "creatorAvatar": "S",
+  "creatorColor": "#ec4899",
+  "gradientFrom": "#f43f5e",
+  "gradientTo": "#ec4899",
+  "animationType": "particles",
+  "tags": [
+    "heart",
+    "particle",
+    "burst",
+    "canvas"
+  ],
+  "description": "Heart-shaped particle explosion on click with physics, gravity and color trails.",
+  "isNew": false,
+  "isTrending": true,
+  "isFeatured": false,
+  "rows": [
+    "trending",
+    "hearts",
+    "particles",
+    "canvas"
+  ],
+  "htmlPath": "/content/heart-particle-burst/html.txt",
+  "cssPath": "/content/heart-particle-burst/css.txt",
+  "jsPath": "/content/heart-particle-burst/js.txt"
+}

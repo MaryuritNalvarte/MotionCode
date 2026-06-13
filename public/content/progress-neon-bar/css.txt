@@ -1,0 +1,31 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #050816;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 12px;
+  background: rgba(16, 185, 129, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #06b6d4);
+  border-radius: 6px;
+  animation: progress 3s ease-in-out infinite;
+  box-shadow: 0 0 20px #10b981, 0 0 40px #06b6d4;
+}
+
+@keyframes progress {
+  0% { width: 0; }
+  50% { width: 100%; }
+  100% { width: 0; }
+}

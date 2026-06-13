@@ -1,0 +1,29 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
+
+body {
+  min-height: 100vh;
+  background: #050816;
+  overflow: hidden;
+}
+
+.aurora {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(236, 72, 153, 0.3) 0%,
+    rgba(139, 92, 246, 0.3) 50%,
+    rgba(59, 130, 246, 0.3) 100%
+  );
+  filter: blur(100px);
+  animation: aurora 8s ease-in-out infinite;
+}
+
+@keyframes aurora {
+  0%, 100% {
+    transform: translateX(-10%) translateY(-10%) rotate(0deg);
+  }
+  50% {
+    transform: translateX(10%) translateY(10%) rotate(180deg);
+  }
+}

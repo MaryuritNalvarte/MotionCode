@@ -1,0 +1,35 @@
+{
+  "id": "21",
+  "slug": "floating-hearts",
+  "title": "Floating Hearts",
+  "category": "CSS",
+  "categorySlug": "css",
+  "categoryIcon": "✨",
+  "difficulty": "Beginner",
+  "views": 41200,
+  "stars": 298,
+  "likes": 943,
+  "creator": "codepoet",
+  "creatorAvatar": "P",
+  "creatorColor": "#34d399",
+  "gradientFrom": "#ec4899",
+  "gradientTo": "#a855f7",
+  "animationType": "morph",
+  "tags": [
+    "heart",
+    "float",
+    "love",
+    "css"
+  ],
+  "description": "Hearts floating upward with random size and opacity. Dreamy romantic background.",
+  "isNew": false,
+  "isTrending": false,
+  "isFeatured": false,
+  "rows": [
+    "hearts",
+    "css"
+  ],
+  "htmlPath": "/content/floating-hearts/html.txt",
+  "cssPath": "/content/floating-hearts/css.txt",
+  "jsPath": "/content/floating-hearts/js.txt"
+}

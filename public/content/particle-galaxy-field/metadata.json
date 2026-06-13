@@ -1,0 +1,36 @@
+{
+  "id": "3",
+  "slug": "particle-galaxy-field",
+  "title": "Particle Galaxy Field",
+  "category": "Particle Systems",
+  "categorySlug": "particles",
+  "categoryIcon": "🌌",
+  "difficulty": "Advanced",
+  "views": 91300,
+  "stars": 723,
+  "likes": 2108,
+  "creator": "stardustfx",
+  "creatorAvatar": "S",
+  "creatorColor": "#ec4899",
+  "gradientFrom": "#a855f7",
+  "gradientTo": "#3b82f6",
+  "animationType": "particles",
+  "tags": [
+    "canvas",
+    "particles",
+    "galaxy",
+    "interactive"
+  ],
+  "description": "500+ interconnected particles with physics simulation, gravity, mouse interaction and RGB cycling.",
+  "isNew": false,
+  "isTrending": true,
+  "isFeatured": true,
+  "rows": [
+    "trending",
+    "particles",
+    "canvas"
+  ],
+  "htmlPath": "/content/particle-galaxy-field/html.txt",
+  "cssPath": "/content/particle-galaxy-field/css.txt",
+  "jsPath": "/content/particle-galaxy-field/js.txt"
+}

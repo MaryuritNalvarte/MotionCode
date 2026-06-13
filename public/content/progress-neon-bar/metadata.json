@@ -1,0 +1,35 @@
+{
+  "id": "18",
+  "slug": "progress-neon-bar",
+  "title": "Neon Progress Bar",
+  "category": "Loading",
+  "categorySlug": "loading",
+  "categoryIcon": "⏳",
+  "difficulty": "Beginner",
+  "views": 19300,
+  "stars": 143,
+  "likes": 389,
+  "creator": "chromawave",
+  "creatorAvatar": "C",
+  "creatorColor": "#10b981",
+  "gradientFrom": "#10b981",
+  "gradientTo": "#06b6d4",
+  "animationType": "wave",
+  "tags": [
+    "progress",
+    "bar",
+    "neon",
+    "css"
+  ],
+  "description": "Animated neon progress bar with glow trail. Perfect for file upload or page load indicators.",
+  "isNew": false,
+  "isTrending": false,
+  "isFeatured": false,
+  "rows": [
+    "loading",
+    "css"
+  ],
+  "htmlPath": "/content/progress-neon-bar/html.txt",
+  "cssPath": "/content/progress-neon-bar/css.txt",
+  "jsPath": "/content/progress-neon-bar/js.txt"
+}
