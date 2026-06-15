@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import type { ReactElement } from "react";
 import {
   ArrowLeft, Copy, Download, ExternalLink, Check,
   Star, Eye, Heart, Code2, ChevronRight, BookOpen,
@@ -8,11 +7,6 @@ import {
 import type { AnimationProject } from "../utils/types";
 import { allAnimations } from "../utils/data-bridge";
 import { useLang } from "./LangContext";
-import { 
-  PreviewOrbit, PreviewWave, PreviewParticles, PreviewAurora, 
-  PreviewMatrix, PreviewMorph, PreviewGlitch, Preview3DCards, 
-  PreviewLoader, PreviewTypewriter, PreviewRipple, PreviewMosaic 
-} from "./AnimationCard";
 
 const DIFF_STYLE = {
   Beginner:     { bg: "rgba(16,185,129,0.12)", text: "#10b981", border: "rgba(16,185,129,0.25)" },
@@ -157,29 +151,29 @@ function CodeView({ code, lang }: { code: string; lang: "html" | "css" | "js" })
   );
 }
 
-/* ── Live preview - usa el componente de preview correcto según el tipo de animación ── */
+/* ── Live preview - usa iframe para cargar los archivos reales de la animación ── */
+// Ubicación para insertar código de Google AdSense si se desea monetizar el preview
 function LivePreview({ project }: { project: AnimationProject }) {
-  const PREVIEWS: Record<string, (props: { from: string; to: string }) => ReactElement> = {
-    orbit: (p) => <PreviewOrbit {...p} />,
-    wave: (p) => <PreviewWave {...p} />,
-    particles: (p) => <PreviewParticles {...p} />,
-    aurora: (p) => <PreviewAurora {...p} />,
-    matrix: (p) => <PreviewMatrix {...p} />,
-    morph: (p) => <PreviewMorph {...p} />,
-    glitch: (p) => <PreviewGlitch {...p} />,
-    cards3d: (p) => <Preview3DCards {...p} />,
-    loader: (p) => <PreviewLoader {...p} />,
-    typewriter: (p) => <PreviewTypewriter {...p} />,
-    ripple: (p) => <PreviewRipple {...p} />,
-    mosaic: (p) => <PreviewMosaic {...p} />,
-  };
-
-  const PreviewComp = PREVIEWS[project.animationType] ?? PREVIEWS.orbit;
+  // El iframe carga index.html que incluye style.css y script.js
+  // Esto garantiza Single Source of Truth: el preview usa los mismos archivos que el code viewer
+  const iframeSrc = `/content/${project.slug}/index.html`;
 
   return (
-    <div className="w-full h-full flex items-center justify-center relative">
-      <PreviewComp from={project.gradientFrom} to={project.gradientTo} />
-    </div>
+    <iframe
+      src={iframeSrc}
+      sandbox="allow-scripts allow-same-origin"
+      style={{
+        width: '100%',
+        height: '100%',
+        border: 'none',
+        borderRadius: '0',
+        overflow: 'hidden',
+        scrollbarWidth: 'none',
+        msOverflowStyle: 'none',
+      }}
+      title={`${project.title} Preview`}
+      loading="lazy"
+    />
   );
 }
 
@@ -203,29 +197,29 @@ export function ProjectPage({ project, onBack, onViewProject }: Props) {
   const trending = allAnimations.filter((a: AnimationProject) => a.isTrending && a.id !== project.id).slice(0, 3);
 
   // Cargar código de archivos externos
+  // Los paths se derivan automáticamente desde el slug
   useEffect(() => {
     const loadCode = async () => {
-      if (project.htmlPath && project.cssPath && project.jsPath) {
-        try {
-          const [htmlRes, cssRes, jsRes] = await Promise.all([
-            fetch(project.htmlPath),
-            fetch(project.cssPath),
-            fetch(project.jsPath),
-          ]);
-          const [html, css, js] = await Promise.all([
-            htmlRes.text(),
-            cssRes.text(),
-            jsRes.text(),
-          ]);
-          setCodeMap({ html, css, js });
-        } catch (error) {
-          console.error('Error loading animation code:', error);
-          setCodeMap({ html: "// Error loading code", css: "/* Error loading code */", js: "// Error loading code" });
-        }
+      const basePath = `/content/${project.slug}`;
+      try {
+        const [htmlRes, cssRes, jsRes] = await Promise.all([
+          fetch(`${basePath}/index.html`),
+          fetch(`${basePath}/style.css`),
+          fetch(`${basePath}/script.js`),
+        ]);
+        const [html, css, js] = await Promise.all([
+          htmlRes.text(),
+          cssRes.text(),
+          jsRes.text(),
+        ]);
+        setCodeMap({ html, css, js });
+      } catch (error) {
+        console.error('Error loading animation code:', error);
+        setCodeMap({ html: "// Error loading code", css: "/* Error loading code */", js: "// Error loading code" });
       }
     };
     loadCode();
-  }, [project.htmlPath, project.cssPath, project.jsPath]);
+  }, [project.slug]);
 
   const copyAll = () => {
     navigator.clipboard.writeText(codeMap.html + "\n\n" + codeMap.css + "\n\n" + codeMap.js);

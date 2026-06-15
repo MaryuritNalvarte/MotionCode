@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { CategoryPage as CategoryPageComponent } from '../components/CategoryPage';
 import { SEOHead } from '../components/SEOHead';
-import { allAnimations, allCategories } from '../utils/data-bridge';
+import { allAnimations, categories } from '../utils/data-bridge';
 
 /**
  * CategoryPage component
@@ -28,12 +28,12 @@ export function CategoryPage() {
   const navigate = useNavigate();
 
   // Find category metadata
-  const category = allCategories.find((c) => c.slug === categoryId);
+  const category = categories.find((c) => c.id === categoryId);
   const isTrending = categoryId === 'trending';
   const isNew = categoryId === 'new';
 
   // Determine page title and icon
-  let pageTitle = category?.name || (isTrending ? 'Trending Animations' : isNew ? 'New Animations' : categoryId);
+  let pageTitle = category?.name || (isTrending ? 'Trending Animations' : isNew ? 'New Animations' : categoryId || 'Animations');
   let pageIcon = category?.icon || (isTrending ? '🔥' : isNew ? '✨' : '✨');
 
   // Filter animations by category
@@ -57,7 +57,7 @@ export function CategoryPage() {
       <SEOHead
         title={`${pageTitle} - MotionCode Animation Library`}
         description={`Explore ${filteredAnimations.length} ${pageTitle.toLowerCase()} animations with copy-paste ready code`}
-        keywords={[categoryId, 'animation', 'code']}
+        keywords={[categoryId || 'animation', 'animation', 'code']}
       />
 
       <div style={{ paddingTop: '60px', minHeight: '100vh' }}>

@@ -1,23 +1,14 @@
 // Importaciones necesarias para el componente CategoriesSection
 import { useState } from "react";
-import { ArrowRight, Layers } from "lucide-react";
+import { Layers } from "lucide-react";
 import { categories } from "./data";
-import { allAnimations } from "../utils/data-bridge";
-import type { AnimationProject } from "../utils/types";
 
 /**
  * Componente CategoriesSection - muestra cuadrícula de categorías de animación
- * Modificado para mostrar números reales de proyectos y navegar correctamente
+ * Modificado para ser puramente visual - sin funcionalidad de navegación ni conteo de proyectos
+ * Conserva efectos visuales de hover
  */
-export function CategoriesSection({ onNavigate }: { onNavigate: (p: string) => void }) {
-  // Calcular números reales de proyectos por categoría
-  const categoriesWithRealCount = categories.map(cat => {
-    // Los IDs de categoría ahora coinciden directamente con los categorySlugs en las animaciones
-    const realCount = allAnimations.filter((a: AnimationProject) => a.categorySlug === cat.id).length;
-    
-    return { ...cat, count: realCount };
-  });
-
+export function CategoriesSection() {
   return (
     <section className="py-20 px-5 sm:px-8 relative">
       <div className="absolute inset-0 pointer-events-none"
@@ -46,8 +37,8 @@ export function CategoriesSection({ onNavigate }: { onNavigate: (p: string) => v
 
         {/* Cuadrícula de 8 columnas — 4×2 en desktop, 2×4 en móvil */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-          {categoriesWithRealCount.map((cat, i) => (
-            <CategoryCard key={cat.id} cat={cat} index={i} onNavigate={onNavigate} />
+          {categories.map((cat, i) => (
+            <CategoryCard key={cat.id} cat={cat} index={i} />
           ))}
         </div>
       </div>
@@ -55,30 +46,22 @@ export function CategoriesSection({ onNavigate }: { onNavigate: (p: string) => v
   );
 }
 
-function CategoryCard({ cat, index, onNavigate }: {
-  cat: typeof categories[0] & { count: number };
+function CategoryCard({ cat, index }: {
+  cat: typeof categories[0];
   index: number;
-  onNavigate: (p: string) => void;
 }) {
   const [hovered, setHovered] = useState(false);
-  const [pressed, setPressed] = useState(false);
   const [A, B] = cat.gradient;
 
-  // Los IDs de categoría ahora coinciden directamente con los categorySlugs en las animaciones
-  const slug = cat.id;
-
   return (
-    <button
-      onClick={() => onNavigate(`category:${slug}`)}
+    <div
       onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => { setHovered(false); setPressed(false); }}
-      onMouseDown={() => setPressed(true)}
-      onMouseUp={() => setPressed(false)}
+      onMouseLeave={() => setHovered(false)}
       className="relative text-left w-full p-5 rounded-2xl overflow-hidden transition-all duration-300"
       style={{
         background: hovered ? `linear-gradient(135deg, ${A}14, ${B}10)` : "rgba(8,10,28,0.7)",
         border: hovered ? `1px solid ${A}55` : "1px solid rgba(99,62,210,0.12)",
-        transform: pressed ? "scale(0.97)" : hovered ? "translateY(-5px) scale(1.02)" : "translateY(0) scale(1)",
+        transform: hovered ? "translateY(-5px) scale(1.02)" : "translateY(0) scale(1)",
         boxShadow: hovered ? `0 20px 50px rgba(0,0,0,0.35), 0 0 30px ${A}18` : "none",
         backdropFilter: "blur(20px)",
       }}
@@ -130,15 +113,7 @@ function CategoryCard({ cat, index, onNavigate }: {
             {cat.description}
           </p>
         </div>
-
-        <div className="flex items-center justify-between">
-          <span style={{ fontFamily: "JetBrains Mono, monospace", fontSize: "11px", color: hovered ? A : "#374151", fontWeight: 600, transition: "color 0.2s" }}>
-            {cat.count} proyectos
-          </span>
-          <ArrowRight size={13}
-            style={{ color: hovered ? A : "#374151", transform: hovered ? "translateX(3px)" : "translateX(0)", transition: "all 0.2s" }} />
-        </div>
       </div>
-    </button>
+    </div>
   );
 }

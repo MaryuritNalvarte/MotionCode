@@ -1,34 +1,32 @@
 {
-  "id": "12",
-  "slug": "css-grid-mosaic",
-  "title": "CSS Grid Mosaic",
-  "category": "CSS",
-  "categorySlug": "css",
-  "categoryIcon": "✨",
-  "difficulty": "Beginner",
-  "views": 21400,
-  "stars": 156,
-  "likes": 421,
-  "creator": "chromawave",
-  "creatorAvatar": "C",
-  "creatorColor": "#10b981",
-  "gradientFrom": "#ec4899",
-  "gradientTo": "#f59e0b",
-  "animationType": "mosaic",
-  "tags": [
-    "css",
-    "grid",
-    "mosaic",
-    "color"
-  ],
-  "description": "Animated color mosaic grid with staggered entrance and hover glow. Eye-catching gallery layout.",
-  "isNew": false,
-  "isTrending": false,
-  "isFeatured": false,
-  "rows": [
-    "css"
-  ],
-  "htmlPath": "/content/css-grid-mosaic/html.txt",
-  "cssPath": "/content/css-grid-mosaic/css.txt",
-  "jsPath": "/content/css-grid-mosaic/js.txt"
+    "id":  "12",
+    "slug":  "css-grid-mosaic",
+    "title":  "CSS Grid Mosaic",
+    "category":  "CSS",
+    "categorySlug":  "css",
+    "categoryIcon":  "✨",
+    "difficulty":  "Beginner",
+    "views":  21400,
+    "stars":  156,
+    "likes":  421,
+    "creator":  "chromawave",
+    "creatorAvatar":  "C",
+    "creatorColor":  "#10b981",
+    "gradientFrom":  "#ec4899",
+    "gradientTo":  "#f59e0b",
+    "animationType":  "mosaic",
+    "tags":  [
+                 "css",
+                 "grid",
+                 "mosaic",
+                 "color"
+             ],
+    "description":  "Animated color mosaic grid with staggered entrance and hover glow. Eye-catching gallery layout.",
+    "isNew":  false,
+    "isTrending":  false,
+    "isFeatured":  false,
+    "rows":  [
+                 "css"
+             ],
+    "publishedAt":  "2026-06-12"
 }

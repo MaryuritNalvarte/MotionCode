@@ -1,34 +1,32 @@
 {
-  "id": "10",
-  "slug": "typewriter-terminal",
-  "title": "Typewriter Terminal",
-  "category": "JavaScript",
-  "categorySlug": "javascript",
-  "categoryIcon": "⚡",
-  "difficulty": "Beginner",
-  "views": 28900,
-  "stars": 198,
-  "likes": 543,
-  "creator": "codepoet",
-  "creatorAvatar": "P",
-  "creatorColor": "#34d399",
-  "gradientFrom": "#10b981",
-  "gradientTo": "#3b82f6",
-  "animationType": "typewriter",
-  "tags": [
-    "typewriter",
-    "terminal",
-    "text",
-    "typing"
-  ],
-  "description": "Multi-string typewriter with cursor, configurable speed and loop. Classic developer aesthetic.",
-  "isNew": false,
-  "isTrending": false,
-  "isFeatured": false,
-  "rows": [
-    "javascript"
-  ],
-  "htmlPath": "/content/typewriter-terminal/html.txt",
-  "cssPath": "/content/typewriter-terminal/css.txt",
-  "jsPath": "/content/typewriter-terminal/js.txt"
+    "id":  "10",
+    "slug":  "typewriter-terminal",
+    "title":  "Typewriter Terminal",
+    "category":  "JavaScript",
+    "categorySlug":  "javascript",
+    "categoryIcon":  "⚡",
+    "difficulty":  "Beginner",
+    "views":  28900,
+    "stars":  198,
+    "likes":  543,
+    "creator":  "codepoet",
+    "creatorAvatar":  "P",
+    "creatorColor":  "#34d399",
+    "gradientFrom":  "#10b981",
+    "gradientTo":  "#3b82f6",
+    "animationType":  "typewriter",
+    "tags":  [
+                 "typewriter",
+                 "terminal",
+                 "text",
+                 "typing"
+             ],
+    "description":  "Multi-string typewriter with cursor, configurable speed and loop. Classic developer aesthetic.",
+    "isNew":  false,
+    "isTrending":  false,
+    "isFeatured":  false,
+    "rows":  [
+                 "javascript"
+             ],
+    "publishedAt":  "2026-05-20"
 }

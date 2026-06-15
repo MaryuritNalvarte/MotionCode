@@ -1,35 +1,33 @@
 {
-  "id": "4",
-  "slug": "aurora-gradient-flow",
-  "title": "Aurora Gradient Flow",
-  "category": "CSS",
-  "categorySlug": "css",
-  "categoryIcon": "✨",
-  "difficulty": "Beginner",
-  "views": 35700,
-  "stars": 267,
-  "likes": 743,
-  "creator": "chromawave",
-  "creatorAvatar": "C",
-  "creatorColor": "#10b981",
-  "gradientFrom": "#ec4899",
-  "gradientTo": "#8b5cf6",
-  "animationType": "aurora",
-  "tags": [
-    "css",
-    "gradient",
-    "aurora",
-    "background"
-  ],
-  "description": "Sweeping aurora borealis effect with smooth color transitions. Stunning as a hero background.",
-  "isNew": true,
-  "isTrending": false,
-  "isFeatured": false,
-  "rows": [
-    "new",
-    "css"
-  ],
-  "htmlPath": "/content/aurora-gradient-flow/html.txt",
-  "cssPath": "/content/aurora-gradient-flow/css.txt",
-  "jsPath": "/content/aurora-gradient-flow/js.txt"
+    "id":  "4",
+    "slug":  "aurora-gradient-flow",
+    "title":  "Aurora Gradient Flow",
+    "category":  "CSS",
+    "categorySlug":  "css",
+    "categoryIcon":  "✨",
+    "difficulty":  "Beginner",
+    "views":  35700,
+    "stars":  267,
+    "likes":  743,
+    "creator":  "chromawave",
+    "creatorAvatar":  "C",
+    "creatorColor":  "#10b981",
+    "gradientFrom":  "#ec4899",
+    "gradientTo":  "#8b5cf6",
+    "animationType":  "aurora",
+    "tags":  [
+                 "css",
+                 "gradient",
+                 "aurora",
+                 "background"
+             ],
+    "description":  "Sweeping aurora borealis effect with smooth color transitions. Stunning as a hero background.",
+    "isNew":  true,
+    "isTrending":  false,
+    "isFeatured":  false,
+    "rows":  [
+                 "new",
+                 "css"
+             ],
+    "publishedAt":  "2026-06-14"
 }

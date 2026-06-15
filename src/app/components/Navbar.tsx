@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Menu, X, Code2, Globe, ChevronDown, Check } from "lucide-react";
-import { useLang } from "../hooks/useLang";
+import { useLang } from "./LangContext";
 
 // Opciones de idioma disponibles
 const LANG_OPTIONS = [

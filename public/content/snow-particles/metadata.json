@@ -1,35 +1,33 @@
 {
-  "id": "26",
-  "slug": "snow-particles",
-  "title": "Snow Particles",
-  "category": "Particle Systems",
-  "categorySlug": "particles",
-  "categoryIcon": "🌌",
-  "difficulty": "Beginner",
-  "views": 48900,
-  "stars": 356,
-  "likes": 987,
-  "creator": "chromawave",
-  "creatorAvatar": "C",
-  "creatorColor": "#10b981",
-  "gradientFrom": "#3b82f6",
-  "gradientTo": "#06b6d4",
-  "animationType": "particles",
-  "tags": [
-    "snow",
-    "particles",
-    "winter",
-    "canvas"
-  ],
-  "description": "Falling snowflakes with depth blur, wind drift and realistic physics.",
-  "isNew": false,
-  "isTrending": false,
-  "isFeatured": false,
-  "rows": [
-    "particles",
-    "canvas"
-  ],
-  "htmlPath": "/content/snow-particles/html.txt",
-  "cssPath": "/content/snow-particles/css.txt",
-  "jsPath": "/content/snow-particles/js.txt"
+    "id":  "26",
+    "slug":  "snow-particles",
+    "title":  "Snow Particles",
+    "category":  "Particle Systems",
+    "categorySlug":  "particles",
+    "categoryIcon":  "🌌",
+    "difficulty":  "Beginner",
+    "views":  48900,
+    "stars":  356,
+    "likes":  987,
+    "creator":  "chromawave",
+    "creatorAvatar":  "C",
+    "creatorColor":  "#10b981",
+    "gradientFrom":  "#3b82f6",
+    "gradientTo":  "#06b6d4",
+    "animationType":  "particles",
+    "tags":  [
+                 "snow",
+                 "particles",
+                 "winter",
+                 "canvas"
+             ],
+    "description":  "Falling snowflakes with depth blur, wind drift and realistic physics.",
+    "isNew":  false,
+    "isTrending":  false,
+    "isFeatured":  false,
+    "rows":  [
+                 "particles",
+                 "canvas"
+             ],
+    "publishedAt":  "2026-05-22"
 }

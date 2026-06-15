@@ -1,36 +1,34 @@
 {
-  "id": "11",
-  "slug": "fluid-ripple-click",
-  "title": "Fluid Ripple Click",
-  "category": "JavaScript",
-  "categorySlug": "javascript",
-  "categoryIcon": "⚡",
-  "difficulty": "Intermediate",
-  "views": 33500,
-  "stars": 245,
-  "likes": 734,
-  "creator": "uicraft",
-  "creatorAvatar": "U",
-  "creatorColor": "#f59e0b",
-  "gradientFrom": "#06b6d4",
-  "gradientTo": "#10b981",
-  "animationType": "ripple",
-  "tags": [
-    "ripple",
-    "click",
-    "water",
-    "fluid"
-  ],
-  "description": "Realistic water ripple effect on mouse click. Smooth canvas-based fluid simulation.",
-  "isNew": true,
-  "isTrending": false,
-  "isFeatured": false,
-  "rows": [
-    "new",
-    "javascript",
-    "canvas"
-  ],
-  "htmlPath": "/content/fluid-ripple-click/html.txt",
-  "cssPath": "/content/fluid-ripple-click/css.txt",
-  "jsPath": "/content/fluid-ripple-click/js.txt"
+    "id":  "11",
+    "slug":  "fluid-ripple-click",
+    "title":  "Fluid Ripple Click",
+    "category":  "JavaScript",
+    "categorySlug":  "javascript",
+    "categoryIcon":  "⚡",
+    "difficulty":  "Intermediate",
+    "views":  33500,
+    "stars":  245,
+    "likes":  734,
+    "creator":  "uicraft",
+    "creatorAvatar":  "U",
+    "creatorColor":  "#f59e0b",
+    "gradientFrom":  "#06b6d4",
+    "gradientTo":  "#10b981",
+    "animationType":  "ripple",
+    "tags":  [
+                 "ripple",
+                 "click",
+                 "water",
+                 "fluid"
+             ],
+    "description":  "Realistic water ripple effect on mouse click. Smooth canvas-based fluid simulation.",
+    "isNew":  true,
+    "isTrending":  false,
+    "isFeatured":  false,
+    "rows":  [
+                 "new",
+                 "javascript",
+                 "canvas"
+             ],
+    "publishedAt":  "2026-06-08"
 }

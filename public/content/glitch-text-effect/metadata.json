@@ -1,35 +1,33 @@
 {
-  "id": "7",
-  "slug": "glitch-text-effect",
-  "title": "Glitch Text Effect",
-  "category": "CSS",
-  "categorySlug": "css",
-  "categoryIcon": "✨",
-  "difficulty": "Intermediate",
-  "views": 54300,
-  "stars": 401,
-  "likes": 1342,
-  "creator": "axeldev",
-  "creatorAvatar": "A",
-  "creatorColor": "#8b5cf6",
-  "gradientFrom": "#3b82f6",
-  "gradientTo": "#ec4899",
-  "animationType": "glitch",
-  "tags": [
-    "css",
-    "glitch",
-    "text",
-    "cyberpunk"
-  ],
-  "description": "A cyberpunk-style glitch text animation with chromatic aberration and scan-line effects.",
-  "isNew": false,
-  "isTrending": true,
-  "isFeatured": false,
-  "rows": [
-    "trending",
-    "css"
-  ],
-  "htmlPath": "/content/glitch-text-effect/html.txt",
-  "cssPath": "/content/glitch-text-effect/css.txt",
-  "jsPath": "/content/glitch-text-effect/js.txt"
+    "id":  "7",
+    "slug":  "glitch-text-effect",
+    "title":  "Glitch Text Effect",
+    "category":  "CSS",
+    "categorySlug":  "css",
+    "categoryIcon":  "✨",
+    "difficulty":  "Intermediate",
+    "views":  54300,
+    "stars":  401,
+    "likes":  1342,
+    "creator":  "axeldev",
+    "creatorAvatar":  "A",
+    "creatorColor":  "#8b5cf6",
+    "gradientFrom":  "#3b82f6",
+    "gradientTo":  "#ec4899",
+    "animationType":  "glitch",
+    "tags":  [
+                 "css",
+                 "glitch",
+                 "text",
+                 "cyberpunk"
+             ],
+    "description":  "A cyberpunk-style glitch text animation with chromatic aberration and scan-line effects.",
+    "isNew":  false,
+    "isTrending":  true,
+    "isFeatured":  false,
+    "rows":  [
+                 "trending",
+                 "css"
+             ],
+    "publishedAt":  "2026-06-05"
 }

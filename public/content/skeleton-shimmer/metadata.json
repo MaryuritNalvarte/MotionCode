@@ -1,35 +1,33 @@
 {
-  "id": "17",
-  "slug": "skeleton-shimmer",
-  "title": "Skeleton Shimmer",
-  "category": "Loading",
-  "categorySlug": "loading",
-  "categoryIcon": "⏳",
-  "difficulty": "Beginner",
-  "views": 52700,
-  "stars": 398,
-  "likes": 1120,
-  "creator": "uicraft",
-  "creatorAvatar": "U",
-  "creatorColor": "#f59e0b",
-  "gradientFrom": "#3b82f6",
-  "gradientTo": "#8b5cf6",
-  "animationType": "mosaic",
-  "tags": [
-    "skeleton",
-    "shimmer",
-    "placeholder",
-    "loading"
-  ],
-  "description": "Modern content placeholder skeleton with shimmer animation. Ready for any card layout.",
-  "isNew": true,
-  "isTrending": false,
-  "isFeatured": false,
-  "rows": [
-    "new",
-    "loading"
-  ],
-  "htmlPath": "/content/skeleton-shimmer/html.txt",
-  "cssPath": "/content/skeleton-shimmer/css.txt",
-  "jsPath": "/content/skeleton-shimmer/js.txt"
+    "id":  "17",
+    "slug":  "skeleton-shimmer",
+    "title":  "Skeleton Shimmer",
+    "category":  "Loading",
+    "categorySlug":  "loading",
+    "categoryIcon":  "⏳",
+    "difficulty":  "Beginner",
+    "views":  52700,
+    "stars":  398,
+    "likes":  1120,
+    "creator":  "uicraft",
+    "creatorAvatar":  "U",
+    "creatorColor":  "#f59e0b",
+    "gradientFrom":  "#3b82f6",
+    "gradientTo":  "#8b5cf6",
+    "animationType":  "mosaic",
+    "tags":  [
+                 "skeleton",
+                 "shimmer",
+                 "placeholder",
+                 "loading"
+             ],
+    "description":  "Modern content placeholder skeleton with shimmer animation. Ready for any card layout.",
+    "isNew":  true,
+    "isTrending":  false,
+    "isFeatured":  false,
+    "rows":  [
+                 "new",
+                 "loading"
+             ],
+    "publishedAt":  "2026-05-23"
 }

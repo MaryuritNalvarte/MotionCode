@@ -2,7 +2,6 @@
 // Shows detailed animation info, code, video, and related animations
 import { useParams, useNavigate } from 'react-router-dom';
 import { SEOHead } from '../components/SEOHead';
-import { useAnimation } from '../hooks/useAnimation';
 import { useMetaTags } from '../hooks/useMetaTags';
 import { allAnimations } from '../utils/data-bridge';
 import { ProjectPage } from '../components/ProjectPage';
@@ -26,8 +25,8 @@ export function AnimationPage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
 
-  // Load animation by slug
-  const { animation, loading, error } = useAnimation(slug, allAnimations);
+  // Find animation by slug from allAnimations (uses auto-discovery system)
+  const animation = allAnimations.find((a: AnimationProject) => a.slug === slug);
 
   // Dynamically update meta tags based on animation data
   useMetaTags({
@@ -36,17 +35,8 @@ export function AnimationPage() {
     animation,
   });
 
-  // Handle loading state
-  if (loading) {
-    return (
-      <div style={{ minHeight: '100vh', display: 'grid', placeItems: 'center' }}>
-        <p>Loading animation...</p>
-      </div>
-    );
-  }
-
   // Handle error state
-  if (error || !animation) {
+  if (!animation) {
     return (
       <div style={{ minHeight: '100vh', padding: '40px 20px' }}>
         <div className="max-w-7xl mx-auto">

@@ -22,9 +22,11 @@ export interface AnimationProject {
   isTrending?: boolean;
   isFeatured?: boolean;
   rows?: string[];
-  htmlPath?: string;
-  cssPath?: string;
-  jsPath?: string;
+  publishedAt?: string;
+  // Los paths se derivan automáticamente desde el slug:
+  // HTML: /content/[slug]/index.html
+  // CSS: /content/[slug]/style.css
+  // JS: /content/[slug]/script.js
   video?: {
     platform: 'youtube' | 'tiktok' | 'instagram' | 'vimeo';
     url: string;

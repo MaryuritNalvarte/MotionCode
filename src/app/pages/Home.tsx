@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { HeroSection } from '../components/HeroSection';
 import { GlobalSearch } from '../components/GlobalSearch';
 import { NetflixSection } from '../components/NetflixSection';
-import { TrendingSection } from '../components/TrendingSection';
 import { CategoriesSection } from '../components/CategoriesSection';
 import { SEOHead } from '../components/SEOHead';
 import { allAnimations } from '../utils/data-bridge';
@@ -99,20 +98,15 @@ export function Home() {
         <SectionDivider />
 
         {/* Filas de carrusel horizontal estilo Netflix */}
-        <NetflixSection onViewProject={handleViewProject} onNavigate={handleNavigate} />
+        <NetflixSection onViewProject={handleViewProject} />
 
         <SectionDivider />
 
         {/* Ubicación de anuncio - entre secciones */}
         <AdBanner label="[Google AdSense — Entre Secciones 728×90]" />
 
-        {/* Cuadrícula clásica de animaciones en tendencia */}
-        <TrendingSection onViewProject={handleViewProject} />
-
-        <SectionDivider />
-
         {/* Cuadrícula de categorías de animación */}
-        <CategoriesSection onNavigate={handleNavigate} />
+        <CategoriesSection />
 
         <SectionDivider />
 

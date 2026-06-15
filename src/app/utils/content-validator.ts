@@ -29,7 +29,7 @@ export interface ValidationReport {
 /**
  * Archivos requeridos para una animación válida
  */
-const REQUIRED_FILES = ['metadata.json', 'html.txt', 'css.txt', 'js.txt'];
+const REQUIRED_FILES = ['metadata.json', 'index.html', 'style.css', 'script.js'];
 
 /**
  * Campos requeridos en metadata.json
@@ -53,9 +53,6 @@ const REQUIRED_METADATA_FIELDS = [
   'animationType',
   'tags',
   'description',
-  'htmlPath',
-  'cssPath',
-  'jsPath',
 ];
 
 /**
@@ -120,25 +117,6 @@ export async function validateAnimationFolder(slug: string): Promise<ValidationR
         result.isValid = false;
         result.errors.push(`Slug en metadata (${metadata.slug}) no coincide con carpeta (${slug})`);
       }
-
-      // Verificar rutas de archivos
-      if (metadata.htmlPath && !metadata.htmlPath.startsWith('/content/')) {
-        result.invalidMetadata = true;
-        result.isValid = false;
-        result.errors.push('htmlPath debe comenzar con /content/');
-      }
-
-      if (metadata.cssPath && !metadata.cssPath.startsWith('/content/')) {
-        result.invalidMetadata = true;
-        result.isValid = false;
-        result.errors.push('cssPath debe comenzar con /content/');
-      }
-
-      if (metadata.jsPath && !metadata.jsPath.startsWith('/content/')) {
-        result.invalidMetadata = true;
-        result.isValid = false;
-        result.errors.push('jsPath debe comenzar con /content/');
-      }
     } catch (error) {
       result.invalidMetadata = true;
       result.isValid = false;
@@ -166,38 +144,49 @@ export async function validateAllAnimations(): Promise<ValidationReport> {
   };
 
   try {
-    // Obtener lista de carpetas en content/
-    // En producción, esto podría venir de un endpoint del servidor
-    // Por ahora, usamos la lista conocida de animaciones
-    const knownSlugs = [
-      "neon-orbit-system",
-      "liquid-wave-equalizer",
-      "particle-galaxy-field",
-      "aurora-gradient-flow",
-      "matrix-code-rain",
-      "morphing-blob-shape",
-      "glitch-text-effect",
-      "3d-floating-cards",
-      "neon-pulse-loader",
-      "typewriter-terminal",
-      "fluid-ripple-click",
-      "css-grid-mosaic",
-      "ghost-cursor",
-      "magnetic-cursor",
-      "spotlight-cursor",
-      "dna-helix-loader",
-      "skeleton-shimmer",
-      "progress-neon-bar",
-      "neon-heart-pulse",
-      "heart-particle-burst",
-      "floating-hearts",
-      "particle-sphere-threejs",
-      "galaxy-spiral-threejs",
-      "liquid-blob-threejs",
-      "fireflies",
-      "snow-particles",
-      "confetti-burst",
-    ];
+    // Intentar obtener lista de carpetas desde endpoint PHP (InfinityFree)
+    let knownSlugs: string[] = [];
+    try {
+      const response = await fetch('/api/animations.php');
+      if (response.ok) {
+        const data = await response.json();
+        knownSlugs = data.slugs || [];
+        console.log('📋 Usando lista dinámica desde PHP:', knownSlugs.length, 'animaciones');
+      } else {
+        throw new Error('Endpoint PHP no disponible');
+      }
+    } catch (error) {
+      // Fallback a lista hardcodeada para desarrollo local
+      console.warn('⚠️  Endpoint PHP no disponible, usando lista hardcodeada');
+      knownSlugs = [
+        "neon-orbit-system",
+        "particle-galaxy-field",
+        "aurora-gradient-flow",
+        "matrix-code-rain",
+        "morphing-blob-shape",
+        "glitch-text-effect",
+        "3d-floating-cards",
+        "neon-pulse-loader",
+        "typewriter-terminal",
+        "fluid-ripple-click",
+        "css-grid-mosaic",
+        "ghost-cursor",
+        "magnetic-cursor",
+        "spotlight-cursor",
+        "dna-helix-loader",
+        "skeleton-shimmer",
+        "progress-neon-bar",
+        "neon-heart-pulse",
+        "heart-particle-burst",
+        "floating-hearts",
+        "particle-sphere-threejs",
+        "galaxy-spiral-threejs",
+        "liquid-blob-threejs",
+        "fireflies",
+        "snow-particles",
+        "confetti-burst",
+      ];
+    }
 
     report.totalFolders = knownSlugs.length;
 

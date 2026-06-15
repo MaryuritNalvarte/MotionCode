@@ -1,35 +1,33 @@
 {
-  "id": "8",
-  "slug": "3d-floating-cards",
-  "title": "3D Floating Cards",
-  "category": "JavaScript",
-  "categorySlug": "javascript",
-  "categoryIcon": "⚡",
-  "difficulty": "Advanced",
-  "views": 41600,
-  "stars": 334,
-  "likes": 987,
-  "creator": "motioncraft",
-  "creatorAvatar": "M",
-  "creatorColor": "#06b6d4",
-  "gradientFrom": "#7c3aed",
-  "gradientTo": "#06b6d4",
-  "animationType": "cards3d",
-  "tags": [
-    "js",
-    "3d",
-    "parallax",
-    "mouse"
-  ],
-  "description": "Mouse-reactive 3D perspective card tilt with floating depth layers. Premium UI microinteraction.",
-  "isNew": true,
-  "isTrending": false,
-  "isFeatured": true,
-  "rows": [
-    "new",
-    "javascript"
-  ],
-  "htmlPath": "/content/3d-floating-cards/html.txt",
-  "cssPath": "/content/3d-floating-cards/css.txt",
-  "jsPath": "/content/3d-floating-cards/js.txt"
+    "id":  "8",
+    "slug":  "3d-floating-cards",
+    "title":  "3D Floating Cards",
+    "category":  "JavaScript",
+    "categorySlug":  "javascript",
+    "categoryIcon":  "⚡",
+    "difficulty":  "Advanced",
+    "views":  41600,
+    "stars":  334,
+    "likes":  987,
+    "creator":  "motioncraft",
+    "creatorAvatar":  "M",
+    "creatorColor":  "#06b6d4",
+    "gradientFrom":  "#7c3aed",
+    "gradientTo":  "#06b6d4",
+    "animationType":  "cards3d",
+    "tags":  [
+                 "js",
+                 "3d",
+                 "parallax",
+                 "mouse"
+             ],
+    "description":  "Mouse-reactive 3D perspective card tilt with floating depth layers. Premium UI microinteraction.",
+    "isNew":  true,
+    "isTrending":  false,
+    "isFeatured":  true,
+    "rows":  [
+                 "new",
+                 "javascript"
+             ],
+    "publishedAt":  "2026-06-15"
 }

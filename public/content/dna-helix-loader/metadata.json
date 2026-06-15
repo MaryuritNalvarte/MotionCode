@@ -1,36 +1,34 @@
 {
-  "id": "16",
-  "slug": "dna-helix-loader",
-  "title": "DNA Helix Loader",
-  "category": "Loading",
-  "categorySlug": "loading",
-  "categoryIcon": "⏳",
-  "difficulty": "Intermediate",
-  "views": 39100,
-  "stars": 287,
-  "likes": 801,
-  "creator": "stardustfx",
-  "creatorAvatar": "S",
-  "creatorColor": "#ec4899",
-  "gradientFrom": "#ec4899",
-  "gradientTo": "#8b5cf6",
-  "animationType": "orbit",
-  "tags": [
-    "loader",
-    "dna",
-    "helix",
-    "css"
-  ],
-  "description": "A double-helix spinner built entirely in CSS. Mesmerizing loading state.",
-  "isNew": false,
-  "isTrending": true,
-  "isFeatured": false,
-  "rows": [
-    "trending",
-    "loading",
-    "css"
-  ],
-  "htmlPath": "/content/dna-helix-loader/html.txt",
-  "cssPath": "/content/dna-helix-loader/css.txt",
-  "jsPath": "/content/dna-helix-loader/js.txt"
+    "id":  "16",
+    "slug":  "dna-helix-loader",
+    "title":  "DNA Helix Loader",
+    "category":  "Loading",
+    "categorySlug":  "loading",
+    "categoryIcon":  "⏳",
+    "difficulty":  "Intermediate",
+    "views":  39100,
+    "stars":  287,
+    "likes":  801,
+    "creator":  "stardustfx",
+    "creatorAvatar":  "S",
+    "creatorColor":  "#ec4899",
+    "gradientFrom":  "#ec4899",
+    "gradientTo":  "#8b5cf6",
+    "animationType":  "orbit",
+    "tags":  [
+                 "loader",
+                 "dna",
+                 "helix",
+                 "css"
+             ],
+    "description":  "A double-helix spinner built entirely in CSS. Mesmerizing loading state.",
+    "isNew":  false,
+    "isTrending":  true,
+    "isFeatured":  false,
+    "rows":  [
+                 "trending",
+                 "loading",
+                 "css"
+             ],
+    "publishedAt":  "2026-06-11"
 }

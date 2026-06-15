@@ -1,0 +1,67 @@
+# Configuración de Apache para InfinityFree
+# Optimizado para React SPA (Single Page Application)
+
+# Habilitar mod_rewrite para routing del lado del cliente
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # Redirigir todas las solicitudes a index.html excepto archivos estáticos
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !^/api/
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Configuración de compresión gzip
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+
+# Configuración de cache para archivos estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Cache de 1 año para assets con hash
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  
+  # Cache de 1 hora para HTML
+  ExpiresByType text/html "access plus 1 hour"
+  
+  # Cache de 1 semana para fonts
+  ExpiresByType font/woff2 "access plus 1 week"
+  ExpiresByType font/woff "access plus 1 week"
+</IfModule>
+
+# Headers de seguridad
+<IfModule mod_headers.c>
+  # Prevenir clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+  
+  # Prevenir MIME type sniffing
+  Header always set X-Content-Type-Options "nosniff"
+  
+  # Habilitar XSS Protection
+  Header always set X-XSS-Protection "1; mode=block"
+  
+  # Referrer Policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Configuración de charset
+AddDefaultCharset UTF-8
+
+# Prevenir listado de directorios
+Options -Indexes
+
+# Configuración de tamaño máximo de subida (para formularios si se agregan en el futuro)
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
