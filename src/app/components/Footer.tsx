@@ -13,7 +13,7 @@ const LINKS = {
 
 // Redes sociales
 const SOCIALS = [
-  { Icon: Github,  href: "#", label: "GitHub" },
+  { Icon: Github,  href: "https://github.com/MaryuritNalvarte/MotionCode", label: "GitHub" },
   { Icon: Twitter, href: "#", label: "Twitter" },
   { Icon: Youtube, href: "#", label: "YouTube" },
   { Icon: Globe,   href: "#", label: "Sitio Web" },
