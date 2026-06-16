@@ -62,8 +62,8 @@ export function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
           {/* Brand col — spans 2 on large */}
           <div className="col-span-2">
-            {/* Logo */}
-            <button onClick={() => navigate("/")} className="flex items-center gap-2.5 mb-5 group">
+            {/* Logo - desactivado */}
+            <div className="flex items-center gap-2.5 mb-5 group">
               <div className="relative w-9 h-9">
                 <div className="absolute inset-0 rounded-xl transition-all duration-300 group-hover:scale-110"
                   style={{ background: "linear-gradient(135deg, #7c3aed, #3b82f6, #06b6d4)", boxShadow: "0 0 15px rgba(124,58,237,0.4)" }} />
@@ -73,7 +73,7 @@ export function Footer() {
                 <span className="text-white">Motion</span>
                 <span style={{ background: "linear-gradient(90deg, #a78bfa, #67e8f9)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Code</span>
               </span>
-            </button>
+            </div>
 
             <p style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "#374151", lineHeight: 1.8, marginBottom: 18, maxWidth: 220 }}>
               La biblioteca de animaciones copiar y pegar líder para desarrolladores frontend modernos. Gratis para siempre.
@@ -107,23 +107,21 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Link columns */}
+          {/* Link columns - desactivados */}
           {Object.entries(LINKS).map(([group, links]) => (
             <div key={group}>
-              <h4 style={{ fontFamily: "Sora, sans-serif", fontWeight: 700, fontSize: "13px", color: "#c4c8ff", marginBottom: 14, letterSpacing: "-0.01em" }}>
+              <h4 style={{ fontFamily: "Sora, sans-serif", fontWeight: 700, fontSize: "13px", color: "#c4c8ff", marginBottom: 14, letterSpacing: "-0.01em", opacity: 0.5 }}>
                 {group}
               </h4>
               <ul className="flex flex-col gap-3">
                 {links.map((link) => (
                   <li key={link}>
-                    <a href="#"
-                      className="block text-xs transition-colors duration-150"
-                      style={{ fontFamily: "Inter, sans-serif", color: "#374151" }}
-                      onMouseEnter={(e) => (e.currentTarget.style.color = "#a78bfa")}
-                      onMouseLeave={(e) => (e.currentTarget.style.color = "#374151")}
+                    <span
+                      className="block text-xs"
+                      style={{ fontFamily: "Inter, sans-serif", color: "#374151", cursor: "not-allowed", opacity: 0.5 }}
                     >
                       {link}
-                    </a>
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -141,15 +139,14 @@ export function Footer() {
             Hecho con <Heart size={10} className="text-pink-500 fill-pink-500 mx-0.5" /> para la comunidad de desarrolladores
           </p>
           <div className="flex items-center gap-4">
+            {/* Enlaces desactivados - solo TikTok y YouTube funcionarán */}
             {["Términos", "Privacidad", "Cookies", "Mapa del sitio"].map((item) => (
-              <a key={item} href="#"
-                className="text-[11px] transition-colors duration-150"
-                style={{ fontFamily: "Inter, sans-serif", color: "#1f1f35" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#4b5563")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#1f1f35")}
+              <span key={item}
+                className="text-[11px]"
+                style={{ fontFamily: "Inter, sans-serif", color: "#1f1f35", cursor: "not-allowed", opacity: 0.5 }}
               >
                 {item}
-              </a>
+              </span>
             ))}
           </div>
         </div>

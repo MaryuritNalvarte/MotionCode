@@ -43,6 +43,12 @@ export function Navbar() {
     { label: t.trending,   path: "/trending" },
   ];
 
+  // Botones de monetización con mismo estilo que navegación
+  const monetizationButtons = [
+    { label: "Publicidad", href: "https://www.effectivecpmnetwork.com/vxj0w9ar?key=bad57237f925568b3fc591d7841aa6d8", color: "#7c3aed" },
+    { label: "Anuncios",   href: "https://omg10.com/4/11154190", color: "#f97316" },
+  ];
+
   const currentLang = LANG_OPTIONS.find((l) => l.code === lang)!;
 
   return (
@@ -108,6 +114,30 @@ export function Navbar() {
               </button>
             );
           })}
+          {monetizationButtons.map((btn) => (
+            <a
+              key={btn.label}
+              href={btn.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200"
+              style={{
+                fontFamily: "Inter, sans-serif",
+                color: btn.color,
+                background: "transparent",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.color = "#e2e8f0";
+                (e.currentTarget as HTMLAnchorElement).style.background = "rgba(255,255,255,0.05)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.color = btn.color;
+                (e.currentTarget as HTMLAnchorElement).style.background = "transparent";
+              }}
+            >
+              {btn.label}
+            </a>
+          ))}
         </div>
 
         {/* Lado derecho - selector de idioma */}
